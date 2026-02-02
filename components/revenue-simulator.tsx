@@ -96,7 +96,7 @@ export function RevenueSimulator() {
               <span className="text-black text-sm font-medium">
                 Chiffre d{"'"}affaires estimé
               </span>
-              <div className="flex gap-4 text-black/70 text-xs mt-0.5">
+              <div className="flex flex-col gap-1 md:flex-row md:gap-4 text-black/70 text-xs mt-0.5">
                 <span>RDV: {calculations.revenueAppointments.toLocaleString("fr-FR")} €</span>
                 <span>Cures: {Math.round(calculations.revenueCures).toLocaleString("fr-FR")} €</span>
               </div>
