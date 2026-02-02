@@ -25,7 +25,7 @@ export function RevenueSimulator() {
   }, [budget])
 
   return (
-    <div className="w-full max-w-2xl mx-auto px-4">
+    <div className="w-full">
       {/* Budget Slider */}
       <div className="bg-card rounded-xl p-4 shadow-sm border border-border mb-4">
         <div className="flex items-center justify-between mb-3">
@@ -53,7 +53,7 @@ export function RevenueSimulator() {
       </div>
 
       {/* KPIs Row - Horizontal compact layout */}
-      <div className="flex gap-3 mb-4">
+      <div className="flex flex-col gap-3 mb-4 md:flex-row">
         <div className="flex-1 bg-card rounded-xl px-4 py-3 shadow-sm border border-border flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg bg-[oklch(0.95_0.05_330)] flex items-center justify-center shrink-0">
             <Users className="w-4 h-4 text-[oklch(0.65_0.2_330)]" />
@@ -102,7 +102,7 @@ export function RevenueSimulator() {
               </div>
             </div>
           </div>
-          <p className="text-[32px] font-bold text-black">
+          <p className="text-2xl md:text-[32px] font-bold text-black">
             {calculations.totalRevenue.toLocaleString("fr-FR")} €
           </p>
         </div>
