@@ -4,7 +4,7 @@ import { useState, useMemo } from "react"
 import { Users, Calendar, Sparkles, TrendingUp } from "lucide-react"
 
 export function RevenueSimulator() {
-  const [budget, setBudget] = useState(300)
+  const [budget, setBudget] = useState(150)
 
   const calculations = useMemo(() => {
     const prospects = Math.round(budget * 0.4)
