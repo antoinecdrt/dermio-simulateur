@@ -108,10 +108,6 @@ export function RevenueSimulator() {
         </div>
       </div>
 
-      {/* Legend */}
-      <p className="text-center text-xs text-muted-foreground/60">
-        1 rendez-vous = 80 € • 1 cure = 500 €
-      </p>
     </div>
   )
 }
